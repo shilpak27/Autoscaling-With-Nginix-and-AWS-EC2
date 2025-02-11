@@ -1,0 +1,1 @@
+# Automated-CI-CD-Pipeline-for-NGINX-Autoscaling-with-Load-Balancing-and-Monitoring
