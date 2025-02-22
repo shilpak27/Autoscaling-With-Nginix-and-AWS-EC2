@@ -1,0 +1,16 @@
+---
+- name: Install Nginx on Debian-based Web Servers
+  hosts: web_servers
+  become: yes  # If root privileges are needed
+  tasks:
+    - name: Install Nginx on Debian/Ubuntu-based systems
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes  # Optional: to ensure cache is updated
+
+    - name: Start and enable Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
